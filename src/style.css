@@ -1,0 +1,154 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Style général */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+.flecheScroll {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 1.7em;
+    color: #ffffff;
+    opacity: 0.7;
+    cursor: default;
+    z-index: 1000;
+    user-select: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 225px 0 200px 0;
+    gap: 60px;
+    text-align: center;
+}
+
+header .text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Bitcount Grid Single', sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header ul {
+    font-family: 'Bitcount Grid Single', sans-serif;
+    font-weight: 300;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 1.3em;
+}
+
+/* Effets hover */
+header h1:hover {
+    text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4);
+    transform: scale(1.01);
+    transition: all 0.25s ease;
+}
+
+header ul li:hover {
+    text-shadow:
+        0 0 8px rgba(255, 255, 255, 0.8),
+        0 0 16px rgba(255, 255, 255, 0.6),
+        0 0 32px rgba(255, 255, 255, 0.4);
+    transform: scale(1.02);
+    transition: all 0.25s ease;
+}
+
+/* Photo de profil */
+.pp {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Ligne HR */
+hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 75px 0;
+}
+
+
+/* MAIN */
+
+main h1 {
+    font-family: 'Bitcount Grid Single', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 0 20px 0; /* marge top 40px, bottom 20px */
+}
+
+
+/* Footer */
+footer {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+
+/*RESPONSIVE*/
+
+    /* Écrans moyens*/
+    @media (max-width: 900px) {
+        header {
+            gap: 40px;
+            margin-top: 150px;
+        }
+        header h1 {
+            font-size: 2em;
+        }
+        header ul {
+            font-size: 1.1em;
+        }
+        .pp {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    /* Écrans petits*/
+    @media (max-width: 600px) {
+        header {
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 120px;
+        }
+        header h1 {
+            font-size: 1.8em;
+        }
+        header ul {
+            font-size: 1em;
+        }
+        .pp {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
