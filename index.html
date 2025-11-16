@@ -1,50 +1,241 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio — Vladimir Vallotton</title>
-    <meta name="description" content="Portfolio de Vladimir Vallotton — projets, compétences et contact." />
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="icon" type="image/png" href="src/img/pp.png" />
-    <link rel="apple-touch-icon" type="image/png" href="src/img/pp.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Vladimir V.</title>
+    <link rel="icon" href="assets/logo/books.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--SEO-->
+        <meta name="description" content="Portfolio de Vladimir Vallotton - Étudiant en informatique & Entrepreneur.">
+        <meta name="keywords" content="Vladimir Vallotton, portfolio, informatique, entrepreneur, BTS SIO, SLAM, Toulouse, compétences, expérience, contact">
+        <meta name="author" content="Vladimir Vallotton">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Portfolio Vladimir V.">
+        <meta property="og:description" content="Portfolio de Vladimir Vallotton - Étudiant en informatique & Entrepreneur.">
+        <meta property="og:image" content="assets/pp.png">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="Portfolio Vladimir V.">
+        <meta property="twitter:description" content="Portfolio de Vladimir Vallotton - Étudiant en informatique & Entrepreneur.">
+        <meta property="twitter:image" content="assets/pp.png">
 </head>
+
 <body>
-    <div class="torch"></div>
-    <canvas id="particules"></canvas>
-    <script src="src/script.js" defer></script>
-        <a id ="top"></a>
     <header>
-        <div class="overlay"></div>
-        <div class="text-block">
-            <h1>Vladimir Vallotton</h1>
-            <ul>
-                <li>- Etudiant en BTS SIO</li>
-                <li>- Barman / Serveur</li>
-                <li>- Entrepreneur</li>
+        <nav>
+            <div class="brand">V.</div>
+            <div class="menu-toggle" id="mobile-menu"><span></span></div>
+                <ul class="nav-list">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#education">Formation</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Bonjour, je suis <span>Vladimir Vallotton</span></h1>
+            <p>Étudiant en informatique & Entrepreneur</p>
+            
+            <a href="assets/cv_vallotton_vladimir.pdf" download class="btn">Télécharger mon CV</a>
+        </div>
+        
+        <div class="hero-photo">
+         <img src="assets/pictureMe.png" alt="Photo de moi">
+        </div>
+
+        <div class="hero-overlay"></div>
+    </section>
+    
+    <img src="assets/shadowTPose.png" alt="Photo de shadow, avatar en ligne" class="shadow-photo">
+
+   <section id="about">
+        <h2>À propos de moi</h2>
+        <div class="about-card">
+            <p class="intro">
+                Étudiant en deuxième année de <strong>BTS SIO</strong> (spécialité SLAM) à <strong>Toulouse</strong>.
+            </p>
+            <div class="info-block">
+                <h3>Profil</h3>
+                <p>Motivé, curieux, passionné. J'équilibre mes études avec mes passions : aventures en auto-stop à travers l'Europe, surf, powerlifting et littérature (française & russe).</p>
+            </div>
+
+            <div class="info-block langues">
+                <h3>Langues</h3>
+                <div class="langues-container">
+                    <ul class="langues-list">
+                        <li>Français — natif <img src="assets/flags/france.png" alt="Drapeau Français" class="flag-icon"></li> 
+                        <li>Anglais — C1 <img src="assets/flags/uk.png" alt="Drapeau Anglais" class="flag-icon"></li>
+                        <li>Espagnol — B2 <img src="assets/flags/spain.png" alt="Drapeau Espagnol" class="flag-icon"></li>
+                        <li>Arabe — A1 <img src="assets/flags/arabicleague.jpg" alt="Drapeau Arabe" class="flag-icon"></li>
+                    </ul>
+
+                    <div class="langues-photo">
+                        <img src="assets/powerlifting.jpg" alt="Illustration Langues">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Formation</h2>
+        <div class="education-container"> 
+            <div class="education-photo">
+                <img src="assets/lofi.png" alt="Photo formation" />
+            </div>
+
+            <ul class="timeline">
+                <li>
+                    <h3>2023 - Baccalauréat <span class="little-text">filière générale</span></h3>
+                    <p><span class="little-text">Maréchal Soult, Mazamet</span><br><br>
+                    Spécialités : Maths, Physique-Chimie, SVT <br>
+                    Section européenne espagnole <span class='little-text'>(DNL)</span> <img src="assets/flags/spain.png" alt="Drapeau Espagnol" class="flag-icon"><br>
+                    Option Maths expertes
+                    </p>
+                </li>
+                <li>
+                    <h3>2023-2024 - Licence LEA</h3>
+                    <p><span class="little-text">Université Jean-Jaurès, Toulouse</span><br><br>
+                    Civilisations et grammaire/syntaxe anglais <img src="assets/flags/uk.png" alt="Drapeau Anglais" class="flag-icon"> & espagnol <img src="assets/flags/spain.png" alt="Drapeau Espagnol" class="flag-icon"> <br>
+                    Économie, Droit, Marketing et Communication. 
+                    </p>
+                </li>
+                <li>
+                    <h3>2024-2026 - BTS SIO <span class='little-text'>(option SLAM)</span></h3>
+                    <p><span class="little-text">Lycée Ozenne, Toulouse</span><br><br>
+                    Java, C#, Développement web, Cybersécurité, Réseaux, Bases de données.
+                    </p>
+                </li>
             </ul>
         </div>
-        <img src="src/img/pp.png" alt="Photo de profil" class="pp" />
-    </header>
-    <hr>
-    <main>
-        <h1>Mes Projets</h1>
+    </section>
 
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="skills-icons">
+            <div class="skill-item">
+                <img src="assets/logo/html.png" alt="HTML">
+                <span>HTML</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/logo/css.png" alt="CSS">
+                <span>CSS</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/logo/js.png" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/logo/python.png" alt="Python">
+                <span>Python</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/logo/java.png" alt="Java">
+                <span>Java</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/logo/arch.png" alt="Arch">
+                <span>Arch Linux</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/logo/debian.png" alt="Debian">
+                <span>Debian</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/logo/gimp.png" alt="Design">
+                <span>Design Graphique</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/logo/github.png" alt="Git">
+                <span>Git / GitHub</span>
+            </div>
+            <div class="skill-item">
+                <img src="assets/logo/sql.png" alt="SQL">
+                <span>SQL / Bases de données</span>
+            </div>
+        </div>
+    </section>
 
-        <h3> -> Kit de presse électronique pour un DJ</h3>
-        <p>
-            Création d'un EPK pour un DJ fait sur-mesure, <b>personnalisé</b> à 100%.
-            <br>
-            Intégration d'aperçus audio et vidéo, <b>éléments dynamiques</b>, effets codés en <b>JS</b>.
-            <br>
-            Contenu <b>responsive</b> & <b>optimisé SEO</b>.
-        </p>
-        <a href="https://djnightslayer.com" target="_blank" class="btn">Voir le projet</a>
-    </main>
+    <section id="experience">
+        <h2>Expérience</h2>
+        <ul class="timeline">
+            <li>
+                <h3><span class='timeline-date'>2020-2022</span> Entrepreneur</h3>
+                <p>Création de <strong>MySchool.Gram</strong>, bibliothèque collaborative de fiches de révisions. <br>
+                Projet médiatisé, plus de 10.000 visiteurs enregistrés. <br>
+                <span class="little-text">Arrêt forcé en 2022 au passage de mon Baccalauréat.</span>
+                </p>
+            </li>
+
+            <li>
+                <h3><span class='timeline-date'>Juin - Sept 2024</span> — Serveur</h3>
+                <p>
+                    <span class="little-text">Restaurant de l'hôtel 4**** Côte Ouest, Les Sables d'Olonne.</span> <br><br>
+                    Accueil, installation, service et conseils oenologiques <span class='little-text'>(jeune sommelier)</span>. <br>
+                    Premier travail saisonnier, découverte du monde du travail.
+                </p>
+            </li>
+
+            <li>
+                <h3><span class='timeline-date'>Fév 2025 - Oct 2025</span> — Barman</h3>
+                <p>
+                    <span class="little-text">La Villa des Oliviers, Toulouse.</span> <br><br>
+                    Service de boissons/cocktails, entretien de la salle, aide en cuisine/plonge.
+                </p>
+            </li>
+
+            <li>
+                <h3><span class='timeline-date'>Juin 2025</span> Stage de 1ère année de BTS</h3>
+                <p>
+                    <span class="little-text">AYESA Ibermatica, Barcelone, Espagne.</span> <br><br>
+                    - Programmation & configuration de lunettes AR/VR <span class="little-text">(Meta Quest 3)</span><br>
+                    - Automatisation de frameworks internes de tâches<br>
+                    - Rédaction de documentation technique
+                </p>
+            </li>
+
+            <li>
+                <h3><span class='timeline-date'>Oct 2025 - Maintenant</span>  Développeur Web Freelance</h3>
+                <p>
+                    Création de sites web modernes & responsive pour des artistes.<br><br>
+                    <span class='little-text'>Dernier projet : </span> <a href="https://djnightslayer.com" target="_blank" rel="noopener noreferrer" style="margin-left: 10px; color: blue;">djnightslayer.com</a>
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-content-wrapper">
+            <div class="contact-info-col">
+                <p>
+                    <img src="assets/logo/linkedin.png" alt="LinkedIn" class="contact-icon"><span class="little-text">LinkedIn: </span><strong style="margin-left:30px;"><a href="https://www.linkedin.com/in/vladimir-vallotton-120b12229/" target="_blank" rel="noopener noreferrer" style="color: blue;">linkedin.com/in/vladimir-vallotton/</a></strong> <br><br>
+                    <img src="assets/logo/instagram.png" alt="Instagram" class="contact-icon"><span class="little-text">Instagram: </span><strong style="margin-left:30px;"><a href="https://www.instagram.com/vlad.vallotton/" target="_blank" rel="noopener noreferrer" style="color: blue;">instagram.com/vlad.vallotton/</a></strong> <br><br>
+                    <img src="assets/logo/email.png" alt="Email" class="contact-icon"><span class="little-text">Email: </span><strong style="margin-left:30px;">vlad.vallotton@gmail.com</strong> <br><br>
+                    <img src="assets/logo/phone.png" alt="Téléphone" class="contact-icon"><span class="little-text">Téléphone: </span><strong style="margin-left:30px;">+33 6 37 45 49 78</strong> <br><br>
+                    <img src="assets/logo/github.png" alt="GitHub" class="contact-icon"><span class="little-text">GitHub: </span><strong style="margin-left:30px;"><a href="https://github.com/vlad2l2t" target="_blank" rel="noopener noreferrer" style="color: blue;">github.com/vlad2l2t</a></strong>
+                </p>
+            </div>
+            
+            <div class="contact-image-col">
+                <img src="assets/contactPicture.jpg" alt="Illustration de contact" style="width: auto; height:300px; border-radius: 10px;">
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p><b>© 2025 Vladimir Vallotton</b>, ce portfolio a été codé par moi-même, sans assistance d'aucune IA.</p>
+        <p>&copy; 2025 Vladimir Vallotton</p>
+        <div id="scrollTop"><img src="assets/logo/up-arrow.png" alt="Scroll to top" style="width: 25px; height: 25px;"></div>
     </footer>
-    <div class="flecheScroll"> ↓ </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
