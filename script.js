@@ -18,3 +18,9 @@ scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({top:0, behavior:'smooth'});
 });
 
+// Fermer menu après clic sur lien
+document.querySelectorAll('.nav-list a').forEach(link => {
+    link.addEventListener('click', () => {
+        navList.classList.remove('show');
+    });
+});

@@ -628,6 +628,7 @@ footer {
 
     .shadow-photo {
         display: none;
+        pointer-events: none;
     }
 
     /* Langues Section */
